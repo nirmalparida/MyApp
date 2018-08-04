@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(138, 199, 201);
+    color: aliceblue;
+    font-family: sans-serif, Arial, Helvetica;
+    height: 100vh;
+}
+
+h1 {
+    font-size: 40px;
+    text-align: center;
+    margin: 20px;
+    color: black;
+}
+
+.container {
+    background-color: aliceblue;
+    color: cadetblue;
+    width: 80%;
+    margin: auto;
+    padding: 10px;
+}
+
+li {
+    display: inline-block;
+    list-style: none;
+}
+
+a {
+    color: cadetblue;
+    text-decoration: none;
+}
+
+.portfolio {
+    display: grid;
+    grid-auto-columns: 1fr 1fr;
+    grid-auto-rows: 1fr 1fr 1fr;
+    grid: 2/3;
+    grid-gap: 10px;
+    grid-row: span 2;
+    height: 100vh;
+    margin: 80px;
+}
+
+.portfolio-item {
+    background-color: aliceblue;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: sandybrown;
+}
+
+.portfolio-item.medium {
+    grid-row: span 2;
+    grid-column: span 2;
+    color: white;
+    background-image: url(img/pexels-photo-270164.jpeg);
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-position: top left;
+}
+
+.portfolio-item.six {
+    grid-row-start: 3;
+    grid-column: span 4;
+    background-color: yellow;
+}
